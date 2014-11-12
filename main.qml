@@ -9,13 +9,6 @@ Window {
         console.log("Height : ", height)
     }
 
-    MouseArea {
-        anchors.fill: parent
-        onClicked: {
-            Qt.quit();
-        }
-    }
-
     Rectangle {
         id: game_world
         width: parent.width - 10
@@ -35,6 +28,16 @@ Window {
             y: parent.height/2 - height
         }
 
+        Button {
+            id: button
+            x: 134
+            y: 280
+            text: "Hello"
+            onClicked: {
+                console.log("Button clicked")
+                hello_message.text = "Button clicked"
+            }
+        }
         Text {
             id: hello_message
             y: rocket.y + rocket.height + 50

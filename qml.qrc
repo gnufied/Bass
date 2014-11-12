@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>1415760797_run.png</file>
+        <file>Button.qml</file>
     </qresource>
 </RCC>
